@@ -1,8 +1,12 @@
 # Ahorcado
 
-Segundo challenge propuesto por el Programa Alura Latam + ONE (Oracle Next Education), en el mismo se propone realizar el famoso juego del ahorcado
+## 📄Descripción:
 
-Requisitos:
+Este proyecto forma parte de los Challenges ONE, que son una forma de implementar el Challenge Based Learning, es decir, aprendizaje basado en desafíos que Apple ayudó a crear.
+
+En este segundo desafío desarrolle un sitio donde poder jugar al Ahorcado.
+
+## ✍️Requisitos:
 - Debe funcionar solo con letras mayúsculas;
 - No deben ser utilizadas letras con acentos ni caracteres especiales;
 - Al completar el dibujo de la horca, debe ser mostrado un mensaje "Fin del juego" en la pantalla;
@@ -13,5 +17,7 @@ Requisitos:
 - Las letras equivocadas deben aparecer en la pantalla, pero no pueden aparecer de forma repetida;
 - Las letras correctas deben aparecer en la pantalla encima de los guiones, en la posición correcta em relación a la palabra.
 
-Extras:
+## 🔋Extras:
 - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
+
+## Insignia:
