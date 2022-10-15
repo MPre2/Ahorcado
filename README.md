@@ -40,3 +40,4 @@ En este segundo desafío desarrolle un sitio donde poder jugar al Ahorcado.
   - ¿Cómo un desarrollador Front End utiliza el Figma? #AluraMás
 
 ## 😊 Insignia
+![cms_files_10224_1659461490Badge_JS_Alura_ChallengeOracleONE_2000x2000_V3](https://user-images.githubusercontent.com/111287993/195984895-723a9086-2de3-4d8b-acc4-c683ec1e8a40.png)
