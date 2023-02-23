@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-    
-    <head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="icon" type="image/png" href="./imagenes/ahorcado.png" />
+    <title>Ahorcado By MPre2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./reset.css">
-        <title>Ahorcado - Alura+ONE</title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-        
-    </head>
-    
-    <body>
+  <body>
+    <!--Pantalla principal del juego-->
+    <div id="inicio-juego" class="principal">
+      <a href="#juego">
+        <!--Botones de Inicio del juego-->
+        <input
+          type="button"
+          class="btn-iniciar"
+          id="botonInicio"
+          value="Iniciar Juego"
+          onclick="juego()"
+        />
+      </a>
+      <a href="#agregar-palabra">
+        <input
+          type="button"
+          class="btn-agregar-palabra"
+          id="botonAgregarPalabra"
+          value="Agregar Palabra"
+          onclick="apareceAgregarPalabra()"
+        />
+      </a>
+    </div>
 
-        <!--Pantalla principal del juego-->
-        <div id="inicio-juego" class="principal">
-            <a href="#juego">
-                <!--Botones de Inicio del juego-->
-                <input type="button" class="btn-iniciar" id="botonInicio" value="Iniciar Juego" onclick="juego()">
-            </a>
-            <a href="#agregar-palabra">
-                <input type="button" class="btn-agregar-palabra" id="botonAgregarPalabra" value="Agregar Palabra" onclick="apareceAgregarPalabra()">
-            </a>
-        </div>
-        
-        <!--Canvas-->
-        <div class="canvas">
-            <canvas id="horca" width="1200px" height="800px"></canvas>
-        </div>
-        
-        <!--Pantalla agregado de palabra al juego-->
-        <div id="agregar-palabra" class="agregarPalabra">
-            <input type="text" id="ingresoPalabra" placeholder="Ingrese nueva palabra">
-            <a href="#inicio-juego">
-                <input type="button" id="guardarPalabra" value="Guardar Palabra" onclick="agregarPalabra()">
-            </a>
-            <a href="#inicio-juego">
-                <input type="button" id="volverJuego" value="Volver a Inicio" onclick="apareceInicio()">
-            </a>
-        </div>
-        
-        <!--Pantalla de juego-->
-        <div id="juego" class="juego">
-            <input type="button" id="nuevoJuego" value="Nuevo Juego" onclick="juego()">
-            <input type="button" id="desistir" value="Desistir" onclick="desistir()">
-            <input type="button" id="volver" value="Volver a Inicio" onclick="location.reload()">
-        </div>
-        
-        <script type="text/javascript" src="./juego.js"></script>
-        <script type="text/javascript" src="./ahorcado.js"></script>
+    <!--Canvas-->
+    <div class="canvas">
+      <canvas id="horca" width="1200px" height="800px"></canvas>
+    </div>
 
-    </body>
-    
-    <footer id="footer">
-        <p>&copy Todos los derechos reservados - Desarrollado por Presta Matias</p>
-    </footer>
+    <!--Pantalla agregado de palabra al juego-->
+    <div id="agregar-palabra" class="agregarPalabra">
+      <input
+        type="text"
+        id="ingresoPalabra"
+        placeholder="Ingrese nueva palabra"
+      />
+      <a href="#inicio-juego">
+        <input
+          type="button"
+          id="guardarPalabra"
+          value="Guardar Palabra"
+          onclick="agregarPalabra()"
+        />
+      </a>
+      <a href="#inicio-juego">
+        <input
+          type="button"
+          id="volverJuego"
+          value="Volver a Inicio"
+          onclick="apareceInicio()"
+        />
+      </a>
+    </div>
+
+    <!--Pantalla de juego-->
+    <div id="juego" class="juego">
+      <input
+        type="button"
+        id="nuevoJuego"
+        value="Nuevo Juego"
+        onclick="juego()"
+      />
+      <input
+        type="button"
+        id="desistir"
+        value="Desistir"
+        onclick="desistir()"
+      />
+      <input
+        type="button"
+        id="volver"
+        value="Volver a Inicio"
+        onclick="location.reload()"
+      />
+    </div>
+
+    <script type="text/javascript" src="./juego.js"></script>
+    <script type="text/javascript" src="./ahorcado.js"></script>
+  </body>
+
+  <footer id="footer">
+    <p>
+      &copy 2022 - Diseño y desarrollo<a
+        href="https://www.linkedin.com/in/matias-presta/"
+        style="text-decoration: none"
+      >
+        MPre2</a
+      >
+    </p>
+  </footer>
 </html>
