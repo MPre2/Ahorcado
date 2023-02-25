@@ -1,5 +1,4 @@
 body {
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   background: #f3f5f6;
 }
@@ -7,26 +6,19 @@ body {
 /*Estilo de la pantalla pricnipal del juego */
 .principal {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 /*Estilo del boton de inicio y Estilo del boton para agregar palabra en el arreglo*/
-.btn-iniciar, .btn-agregar-palabra {
-  vertical-align: center;
-  padding: 24px;
-  position: absolute;
+.btn-iniciar,
+.btn-agregar-palabra {
+  position: relative;
   width: 300px;
   height: 100px;
-  left: 40%;
   background: #0a3871;
   border-radius: 24px;
-  font-style: normal;
   font-size: 24px;
-  line-height: 22px;
-  display: flex;
-  justify-content: center;
   color: #ffffff;
 }
 
@@ -35,7 +27,7 @@ body {
 }
 
 .btn-agregar-palabra {
-  top: 22rem;
+  top: 16rem;
 }
 
 /*Cambiamos el estado del objeto cuando se posiciona el mouse por sobre el*/
@@ -51,15 +43,13 @@ body {
 }
 
 .canvas {
-  width: auto;
-  height: auto;
+  width: 1024px;
+  height: 768px;
 }
 
 .agregarPalabra {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 #ingresoPalabra {
@@ -73,7 +63,8 @@ body {
   text-align: center;
 }
 
-#guardarPalabra, #volverJuego {
+#guardarPalabra,
+#volverJuego {
   position: absolute;
   left: 40%;
   border-radius: 24px;
@@ -99,7 +90,9 @@ body {
   align-items: flex-start;
 }
 
-#nuevoJuego, #desistir, #volver {
+#nuevoJuego,
+#desistir,
+#volver {
   position: absolute;
   left: 25px;
   border-radius: 24px;
@@ -125,10 +118,8 @@ body {
 
 #footer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  font-size: 20px;
+  font-size: medium;
 }
 
 /*----------------Diseño Responsivo----------------*/
@@ -138,5 +129,29 @@ body {
 
 /*Smartphone*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .btn-iniciar,
+  .btn-agregar-palabra {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
   
+  #ingresoPalabra {
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #guardarPalabra,
+  #volverJuego {
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    font-size: 20px;
+  }
+
 }
