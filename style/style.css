@@ -1,10 +1,6 @@
 body {
-  min-width: 1024px;
-  position: relative;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f3f5f6;
 }
 
@@ -16,51 +12,30 @@ body {
   align-items: center;
 }
 
-/*Estilo del boton de inicio */
-.btn-iniciar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/*Estilo del boton de inicio y Estilo del boton para agregar palabra en el arreglo*/
+.btn-iniciar, .btn-agregar-palabra {
   vertical-align: center;
   padding: 24px;
   position: absolute;
   width: 300px;
   height: 100px;
   left: 40%;
-  top: 15rem;
   background: #0a3871;
   border-radius: 24px;
   font-style: normal;
-  font-weight: 600;
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
   line-height: 22px;
   display: flex;
   justify-content: center;
   color: #ffffff;
 }
 
-/*Estilo del boton para agregar palabra en el arreglo*/
+.btn-iniciar {
+  top: 15rem;
+}
+
 .btn-agregar-palabra {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 24px;
-  position: absolute;
-  width: 300px;
-  height: 100px;
-  left: 40%;
   top: 22rem;
-  background: #0a3871;
-  border-radius: 24px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 22px;
-  display: flex;
-  justify-content: center;
-  color: #ffffff;
 }
 
 /*Cambiamos el estado del objeto cuando se posiciona el mouse por sobre el*/
@@ -76,8 +51,8 @@ body {
 }
 
 .canvas {
-  width: 1024px;
-  height: 800px;
+  width: auto;
+  height: auto;
 }
 
 .agregarPalabra {
@@ -96,38 +71,26 @@ body {
   width: 350px;
   font-size: 24px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+}
+
+#guardarPalabra, #volverJuego {
+  position: absolute;
+  left: 40%;
+  border-radius: 24px;
+  height: 100px;
+  width: 300px;
+  background: #0a3871;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
 }
 
 #guardarPalabra {
-  position: absolute;
   bottom: 45%;
-  left: 40%;
-  border-radius: 24px;
-  height: 100px;
-  width: 300px;
-  background: #0a3871;
-  font-size: 24px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 #volverJuego {
-  position: absolute;
   bottom: 32%;
-  left: 40%;
-  border-radius: 24px;
-  height: 100px;
-  width: 300px;
-  background: #0a3871;
-  font-size: 24px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 .juego {
@@ -136,9 +99,8 @@ body {
   align-items: flex-start;
 }
 
-#nuevoJuego {
+#nuevoJuego, #desistir, #volver {
   position: absolute;
-  top: 200px;
   left: 25px;
   border-radius: 24px;
   height: 80px;
@@ -146,39 +108,19 @@ body {
   background: #0a3871;
   font-size: 20px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   color: #ffffff;
+}
+
+#nuevoJuego {
+  top: 200px;
 }
 
 #desistir {
-  position: absolute;
   top: 300px;
-  left: 25px;
-  border-radius: 24px;
-  height: 80px;
-  width: 240px;
-  background: #0a3871;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 #volver {
-  position: absolute;
   top: 400px;
-  left: 25px;
-  border-radius: 24px;
-  height: 80px;
-  width: 240px;
-  background: #0a3871;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 #footer {
@@ -187,14 +129,14 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
 }
 
+/*----------------Diseño Responsivo----------------*/
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 796px) {
 }
 
 /*Smartphone*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  
 }
