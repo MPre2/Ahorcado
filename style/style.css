@@ -50,6 +50,8 @@ body {
 .agregarPalabra {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #ingresoPalabra {
@@ -118,7 +120,9 @@ body {
 
 #footer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   font-size: medium;
 }
 
@@ -141,17 +145,26 @@ body {
   #ingresoPalabra {
     border-radius: 10px;
     height: 35px;
-    width: 200px;
-    font-size: 20px;
+    width: 350px;
+    font-size: 24px;
     text-align: center;
   }
   
   #guardarPalabra,
   #volverJuego {
+    position: absolute;
     border-radius: 10px;
     height: 100px;
     width: 200px;
     font-size: 20px;
+  }
+  
+  #guardarPalabra {
+    bottom: 45%;
+  }
+  
+  #volverJuego {
+    bottom: 32%;
   }
 
 }
