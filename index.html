@@ -27,13 +27,12 @@
           onclick="juego()"
         />
       </a>
-      <a href="#agregar-palabra">
+      <a href="./screens/agregarPalabra.html">
         <input
           type="button"
           class="btn-agregar-palabra"
           id="botonAgregarPalabra"
           value="Agregar Palabra"
-          onclick="apareceAgregarPalabra()"
         />
       </a>
     </div>
@@ -41,31 +40,6 @@
     <!--Canvas-->
     <div class="canvas">
       <canvas id="horca" width="1200px" height="800px"></canvas>
-    </div>
-
-    <!--Pantalla agregado de palabra al juego-->
-    <div id="agregar-palabra" class="agregarPalabra">
-      <input
-        type="text"
-        id="ingresoPalabra"
-        placeholder="Ingrese nueva palabra"
-      />
-      <a href="#inicio-juego">
-        <input
-          type="button"
-          id="guardarPalabra"
-          value="Guardar Palabra"
-          onclick="agregarPalabra()"
-        />
-      </a>
-      <a href="#inicio-juego">
-        <input
-          type="button"
-          id="volverJuego"
-          value="Volver a Inicio"
-          onclick="apareceInicio()"
-        />
-      </a>
     </div>
 
     <!--Pantalla de juego-->

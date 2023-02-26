@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="icon" type="image/png" href="../imagenes/ahorcado.png" />
+    <title>Ahorcado By MPre2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/stykeAgregarPalabra.css" />
+  </head>
+  <body>
+    <!--Pantalla agregado de palabra al juego-->
+    <div id="agregar-palabra" class="agregarPalabra">
+      <input
+        type="text"
+        id="ingresoPalabra"
+        placeholder="Ingrese nueva palabra"
+      />
+      <a href="../index.html">
+        <input
+          type="button"
+          id="guardarPalabra"
+          value="Guardar Palabra"
+          onclick="agregarPalabra()"
+        />
+      </a>
+      <a href="../index.html">
+        <input type="button" id="volverJuego" value="Volver a Inicio" />
+      </a>
+    </div>
+
+    <script type="text/javascript" src="./Javascript/juego.js"></script>
+  </body>
+  <footer id="footer">
+    <p>
+      &copy 2022 - Diseño y desarrollo<a
+        href="https://www.linkedin.com/in/matias-presta/"
+        style="text-decoration: none"
+      >
+        MPre2</a
+      >
+    </p>
+  </footer>
+</html>

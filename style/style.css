@@ -10,6 +10,10 @@ body {
   align-items: center;
 }
 
+a {
+  cursor: default;
+}
+
 /*Estilo del boton de inicio y Estilo del boton para agregar palabra en el arreglo*/
 .btn-iniciar,
 .btn-agregar-palabra {
@@ -33,8 +37,6 @@ body {
 /*Cambiamos el estado del objeto cuando se posiciona el mouse por sobre el*/
 .btn-iniciar:hover,
 .btn-agregar-palabra:hover,
-#guardarPalabra:hover,
-#volverJuego:hover,
 #nuevoJuego:hover,
 #desistir:hover,
 #volver:hover {
@@ -45,45 +47,6 @@ body {
 .canvas {
   width: 1024px;
   height: 768px;
-}
-
-.agregarPalabra {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#ingresoPalabra {
-  position: absolute;
-  bottom: 60%;
-  left: 38%;
-  border-radius: 10px;
-  height: 35px;
-  width: 350px;
-  font-size: 24px;
-  text-align: center;
-}
-
-#guardarPalabra,
-#volverJuego {
-  position: absolute;
-  left: 40%;
-  border-radius: 24px;
-  height: 100px;
-  width: 300px;
-  background: #0a3871;
-  font-size: 24px;
-  text-align: center;
-  color: #ffffff;
-}
-
-#guardarPalabra {
-  bottom: 45%;
-}
-
-#volverJuego {
-  bottom: 32%;
 }
 
 .juego {
@@ -136,35 +99,9 @@ body {
   .btn-iniciar,
   .btn-agregar-palabra {
     width: 200px;
-    height: 100px;
+    height: 50px;
     border-radius: 10px;
     font-size: 20px;
     line-height: 22px;
   }
-  
-  #ingresoPalabra {
-    border-radius: 10px;
-    height: 35px;
-    width: 350px;
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  #guardarPalabra,
-  #volverJuego {
-    position: absolute;
-    border-radius: 10px;
-    height: 100px;
-    width: 200px;
-    font-size: 20px;
-  }
-  
-  #guardarPalabra {
-    bottom: 45%;
-  }
-  
-  #volverJuego {
-    bottom: 32%;
-  }
-
 }

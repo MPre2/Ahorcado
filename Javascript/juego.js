@@ -1,7 +1,6 @@
 //Objetos del HTML
 document.querySelector("canvas");
 document.getElementById("botonInicio");
-document.getElementById("agregar-palabra").style.display = "none";
 document.getElementById("nuevoJuego").style.display = "none";
 document.getElementById("desistir").style.display = "none";
 document.getElementById("volver").style.display = "none";
@@ -23,18 +22,6 @@ let palabra = "";
 let tablero = document.getElementById("horca").getContext("2d");
 let letras = [];
 let errores = 8;
-
-//Funcion para que el Id "agregar-palabra" aparezca en pantalla
-function apareceAgregarPalabra() {
-  document.getElementById("inicio-juego").style.display = "none";
-  document.getElementById("agregar-palabra").style.display = "inline";
-}
-
-//Función para qeu el Id "inicio-juego" aparezca en pantalla
-function apareceInicio() {
-  document.getElementById("inicio-juego").style.display = "inline";
-  document.getElementById("agregar-palabra").style.display = "none";
-}
 
 //Función para generar de manera aleatoria la palabra a descifrar
 function palabraAleatoria() {
@@ -64,7 +51,6 @@ function anadirLetraIncorrecta() {
 //Funcion se realiza toda la accion del juego en si
 function juego() {
   document.getElementById("inicio-juego").style.display = "none";
-  document.getElementById("agregar-palabra").style.display = "none";
   document.getElementById("nuevoJuego").style.display = "inline";
   document.getElementById("desistir").style.display = "inline";
   document.getElementById("volver").style.display = "inline";
