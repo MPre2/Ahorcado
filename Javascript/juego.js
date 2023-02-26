@@ -51,6 +51,7 @@ function anadirLetraIncorrecta() {
 //Funcion se realiza toda la accion del juego en si
 function juego() {
   document.getElementById("inicio-juego").style.display = "none";
+  document.querySelector("canvas").style.display = "inline";
   document.getElementById("nuevoJuego").style.display = "inline";
   document.getElementById("desistir").style.display = "inline";
   document.getElementById("volver").style.display = "inline";

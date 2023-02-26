@@ -27,11 +27,11 @@ a {
 }
 
 .btn-iniciar {
-  top: 15rem;
+  top: 240px;
 }
 
 .btn-agregar-palabra {
-  top: 16rem;
+  top: 256px;
 }
 
 /*Cambiamos el estado del objeto cuando se posiciona el mouse por sobre el*/
@@ -83,9 +83,9 @@ a {
 
 #footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  justify-content: space-around;
+  bottom: 10px;
   font-size: medium;
 }
 
@@ -102,6 +102,17 @@ a {
     height: 50px;
     border-radius: 10px;
     font-size: 20px;
-    line-height: 22px;
+  }
+
+  .btn-iniciar {
+    top: 200px;
+  }
+
+  .btn-agregar-palabra {
+    top: 216px;
+  }
+
+  #footer {
+    bottom: 250px;
   }
 }
