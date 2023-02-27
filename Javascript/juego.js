@@ -1,9 +1,7 @@
 //Objetos del HTML
-document.querySelector("canvas");
-document.getElementById("botonInicio");
-document.getElementById("nuevoJuego").style.display = "none";
-document.getElementById("desistir").style.display = "none";
-document.getElementById("volver").style.display = "none";
+document.querySelector("canvas").style.display = "none";
+document.getElementById("agregar-palabra").style.display = "none"
+document.getElementById("juego").style.display = "none";
 
 //Variables o selectores
 let palabraSecreta = [
@@ -22,6 +20,17 @@ let palabra = "";
 let tablero = document.getElementById("horca").getContext("2d");
 let letras = [];
 let errores = 8;
+
+//Funcion para cambiar el display a visible
+function apareceMenu() {
+  document.getElementById("inicio-juego").style.display = "none";
+  document.getElementById("agregar-palabra").style.display = "flex";
+}
+
+function apareceInicio() {
+  document.getElementById("agregar-palabra").style.display = "none";
+  document.getElementById("inicio-juego").style.display = "flex";
+}
 
 //Función para generar de manera aleatoria la palabra a descifrar
 function palabraAleatoria() {
@@ -51,9 +60,8 @@ function anadirLetraIncorrecta() {
 //Funcion se realiza toda la accion del juego en si
 function juego() {
   document.getElementById("inicio-juego").style.display = "none";
-  document.getElementById("nuevoJuego").style.display = "inline";
-  document.getElementById("desistir").style.display = "inline";
-  document.getElementById("volver").style.display = "inline";
+  document.querySelector("canvas").style.display = "inline";
+  document.getElementById("juego").style.display = "inline";
   //Escoje una palabra al azar
   palabraAleatoria();
   //Dibuja el tablero donde se va a dibujar el ahorcado

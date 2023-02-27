@@ -18,6 +18,7 @@ a {
 .btn-iniciar,
 .btn-agregar-palabra {
   position: relative;
+  top: 200px;
   width: 300px;
   height: 100px;
   background: #0a3871;
@@ -26,22 +27,45 @@ a {
   color: #ffffff;
 }
 
-.btn-iniciar {
-  top: 240px;
-}
-
-.btn-agregar-palabra {
-  top: 256px;
-}
-
 /*Cambiamos el estado del objeto cuando se posiciona el mouse por sobre el*/
 .btn-iniciar:hover,
 .btn-agregar-palabra:hover,
+#guardarPalabra:hover,
+#volverJuego:hover,
 #nuevoJuego:hover,
 #desistir:hover,
 #volver:hover {
   background-color: lightblue;
   color: black;
+}
+
+.agregarPalabra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ingresoPalabra {
+  position: relative;
+  top: 260px;
+  border-radius: 10px;
+  height: 35px;
+  width: 350px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#guardarPalabra,
+#volverJuego {
+  position: relative;
+  top: 280px;
+  border-radius: 24px;
+  height: 100px;
+  width: 300px;
+  background: #0a3871;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .canvas {
@@ -84,14 +108,27 @@ a {
 #footer {
   display: flex;
   position: relative;
-  justify-content: space-around;
-  bottom: 10px;
+  bottom: 150px;
   font-size: medium;
 }
 
 /*----------------Diseño Responsivo----------------*/
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 796px) {
+
+  #guardarPalabra,
+  #volverJuego {
+    top: 180px;
+  }
+
+  #ingresoPalabra {
+    top: 160px;
+  }
+
+  #footer {
+    justify-content: center;
+    bottom: 275px;
+  }
 }
 
 /*Smartphone*/
@@ -105,14 +142,34 @@ a {
   }
 
   .btn-iniciar {
-    top: 200px;
+    top: 150px;
   }
 
   .btn-agregar-palabra {
-    top: 216px;
+    top: 166px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  #guardarPalabra,
+  #volverJuego {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    top: 220px;
+  }
+
+  #ingresoPalabra {
+    width: 250px;
+    font-size: 20px;
+    top: 200px;
   }
 
   #footer {
-    bottom: 250px;
+    justify-content: center;
+    bottom: 300px;
   }
 }

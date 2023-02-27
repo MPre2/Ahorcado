@@ -17,24 +17,54 @@
   <body>
     <!--Pantalla principal del juego-->
     <div id="inicio-juego" class="principal">
-      <a href="#juego">
-        <!--Botones de Inicio del juego-->
-        <input
-          type="button"
-          class="btn-iniciar"
-          id="botonInicio"
-          value="Iniciar Juego"
-          onclick="juego()"
-        />
-      </a>
-      <a href="./screens/agregarPalabra.html">
-        <input
-          type="button"
-          class="btn-agregar-palabra"
-          id="botonAgregarPalabra"
-          value="Agregar Palabra"
-        />
-      </a>
+      <div class="buttons">
+        <a href="#juego">
+          <!--Botones de Inicio del juego-->
+          <input
+            type="button"
+            class="btn-iniciar"
+            id="botonInicio"
+            value="Iniciar Juego"
+            onclick="juego()"
+          />
+        </a>
+        <a href="#agregar-palabra">
+          <input
+            type="button"
+            class="btn-agregar-palabra"
+            id="botonAgregarPalabra"
+            value="Agregar Palabra"
+            onclick="apareceMenu()"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!--Pantalla agregado de palabra al juego-->
+    <div id="agregar-palabra" class="agregarPalabra">
+      <input
+        type="text"
+        id="ingresoPalabra"
+        placeholder="Ingrese nueva palabra"
+      />
+      <div class="buttons">
+        <a href="#inicio-juego">
+          <input
+            type="button"
+            id="guardarPalabra"
+            value="Guardar Palabra"
+            onclick="agregarPalabra()"
+          />
+        </a>
+        <a href="#inicio-juego">
+          <input
+            type="button"
+            id="volverJuego"
+            value="Volver a Inicio"
+            onclick="apareceInicio()"
+          />
+        </a>
+      </div>
     </div>
 
     <!--Canvas-->
