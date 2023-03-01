@@ -1,3 +1,7 @@
+
+//TRADUCIR TODO A VARIABLES PARA PODER REALIZAR EL DISEÑO RESPONSIVO DEL CANVAS
+
+
 function dibujarCanvas() {
   tablero.lineWidth = 8;
   tablero.lineCap = "round";
@@ -5,7 +9,7 @@ function dibujarCanvas() {
   tablero.fillStyle = "#F3F5F6";
   tablero.strokeStyle = "#0A3871";
   //Dibuja la base de la horca
-  tablero.fillRect(0, 0, 1200, 860);
+  tablero.fillRect(0, 0, 1200, 800);
   tablero.beginPath();
   tablero.moveTo(600, 500);
   tablero.lineTo(900, 500);
