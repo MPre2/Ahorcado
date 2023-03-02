@@ -99,10 +99,8 @@ a {
 }
 
 #footer {
-  display: flex;
-  justify-content: space-around;
   position: relative;
-  bottom: 50px;
+  bottom: 150px;
   font-size: medium;
 }
 

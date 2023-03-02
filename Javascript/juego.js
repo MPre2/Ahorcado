@@ -1,5 +1,5 @@
 //Objetos del HTML
-document.querySelector("canvas").style.display = "none";
+document.querySelector("canvas");
 document.getElementById("agregar-palabra").style.display = "none"
 document.getElementById("juego").style.display = "none";
 
