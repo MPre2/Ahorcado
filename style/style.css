@@ -82,10 +82,11 @@ a {
   color: #ffffff;
 }
 
-#horca{
+#horca {
   width: 1024;
   height: 768;
 }
+
 #nuevoJuego {
   top: 200px;
 }
@@ -107,6 +108,7 @@ a {
 /*----------------Diseño Responsivo----------------*/
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 796px) {
+
   #guardarPalabra,
   #volverJuego {
     top: 180px;
@@ -124,6 +126,7 @@ a {
 
 /*Smartphone*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
   .btn-iniciar,
   .btn-agregar-palabra,
   #guardarPalabra,
@@ -137,11 +140,11 @@ a {
     font-size: 20px;
   }
 
-  .canvas{
+  .canvas {
     width: 50%;
     height: 80%;
   }
-  
+
   .btn-iniciar {
     top: 150px;
   }
